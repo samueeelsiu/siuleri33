@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>待完成列表🗒️</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .preview-image {
+      display: block;
+      margin: 40px auto 30px;
+      width: 50%;
+      max-width: none;
+      border-radius: 0;
+      box-shadow: 0 0 40px rgba(255, 192, 203, 0.25);
+    }
+    .todo-box {
+      max-width: 740px;
+      margin: 60px auto;
+      padding: 36px 48px;
+      background: rgba(255, 255, 255, 0.72);
+      backdrop-filter: blur(6px);
+      border-radius: 28px;
+      box-shadow: 0 12px 40px rgba(255, 182, 193, 0.25);
+      font-size: 20px;
+      line-height: 1.9;
+      font-family: 'Segoe UI', 'Hiragino Sans GB', 'Caveat', cursive;
+      color: #333;
+      white-space: pre-line;
+      position: relative;
+    }
+    .todo-box::before {
+      content: "未来，刘等等和邵耶耶还要💭";
+      position: absolute;
+      top: -24px;
+      left: 30px;
+      font-size: 18px;
+      color: #cc6699;
+      background: #fff4f6;
+      padding: 4px 10px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(255, 182, 193, 0.2);
+    }
+  </style>
+</head>
+<body class="todo">
+
+  <div class="nav">
+    <a href="index.html">主页💒</a>
+    <a href="337.html">337🥘</a>
+    <a href="rc.html">日常🐶</a>
+    <a href="travel.html">旅游🎠</a>
+    <a href="33.html">3.3🎂</a>
+    <a href="425.html">4.25🎂</a>
+    <a href="todo.html">待完成列表🗒️</a>
+  </div>
+
+  <div class="gallery">
+    <img src="img/todo_cover_ghibli.png" alt="待办主图" class="preview-image">
+  </div>
+
+  <div class="todo-box">
+    🐼去四川看福宝！
+    🐶一起养狗狗
+    🏯一起去乌镇拍写真
+    🍔去吃黑金流沙包
+    ⛲️去流花湖公园
+    🥺去看彼此长大的地方
+
+  </div>
+
+  <audio id="bg-music" src="music/dwc.mp3" autoplay loop></audio>
+  <button id="mute-btn">🔇</button>
+
+  <script src="js/music.js"></script>
+  <script>
+    const fallImages = ["img/Fubao.PNG","Xiongmao.PNG", "🐼", "🧋", "🗽", "🏟️"];
+  </script>
+  <script src="js/falling.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>3.3🎂</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .photo-block {
+      animation: fadeIn 1s ease forwards;
+      opacity: 0;
+    }
+    .photo-block:nth-child(n) {
+      animation-delay: calc(0.05s * var(--i));
+    }
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
+        .preview-image {
+    display: block;
+    margin: 60px auto 40px;
+    width: calc(100% - 60px);
+    max-width: 1200px;
+    border-radius: 16px;
+    box-shadow: 0 10px 40px rgba(255, 192, 203, 0.35);
+    transition: transform 0.3s ease;
+    }
+
+  </style>
+</head>
+<body class="page33">
+
+  <div class="nav">
+    <a href="index.html">主页💒</a>
+    <a href="337.html">337🥘</a>
+    <a href="rc.html">日常🐶</a>
+    <a href="travel.html">旅游🎠</a>
+    <a href="33.html">3.3🎂</a>
+    <a href="425.html">4.25🎂</a>
+    <a href="todo.html">待完成列表🗒️</a>
+  </div>
+
+  <div class="gallery">
+    <img src="img/33_cover_illustration.png" alt="主图" class="preview-image">
+    <div class="photo-block" style="--i:1"><img src="img/33_1.JPG"></div>
+    <div class="photo-block" style="--i:2"><img src="img/33_2.JPG"></div>
+    <div class="photo-block" style="--i:3"><img src="img/33_3.JPG"></div>
+    <div class="photo-block" style="--i:4"><img src="img/33_4.JPG"></div>
+    <div class="photo-block" style="--i:5"><img src="img/33_5.JPG"></div>
+    <div class="photo-block" style="--i:6"><img src="img/33_6.JPG"></div>
+    <div class="photo-block" style="--i:7"><img src="img/33_7.JPG"></div>
+    <div class="photo-block" style="--i:8"><img src="img/33_8.JPG"></div>
+    <div class="photo-block" style="--i:9"><img src="img/33_9.JPG"></div>
+    <div class="photo-block" style="--i:10"><img src="img/33_10.JPG"></div>
+    <div class="photo-block" style="--i:11"><img src="img/33_11.JPG"></div>
+  </div>
+
+  <audio id="bg-music" src="music/33.mp3" autoplay loop></audio>
+  <button id="mute-btn">🔇</button>
+
+  <script src="js/music.js"></script>
+  <script>
+    const fallImages = ["img/Dingdang2.PNG"];
+  </script>
+  <script src="js/falling.js"></script>
+
+</body>
+</html>

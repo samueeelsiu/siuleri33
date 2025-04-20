@@ -1,0 +1,191 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Quicksand:wght@400;600&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+  overflow-x: hidden;
+}
+
+/* 主页💒 - 婚礼欢迎粉 */
+body.home {
+  background: linear-gradient(to bottom, #fff0f5, #ffe4ec);
+}
+
+/* 337🥘 - 奶茶温暖色 */
+body.page337 {
+  background: linear-gradient(to bottom, #fffafc, #fff0e1);
+}
+
+/* 日常🐶 - 柔光米粉+木色 */
+body.daily {
+  background: linear-gradient(to bottom, #fffef9, #fce4e4);
+}
+
+/* 旅游🎠 - 活力蓝紫调 */
+body.travel {
+  background: linear-gradient(to bottom, #fef0f7, #e8d8ff);
+}
+
+/* 3.3🎂 - 蜡烛甜粉 */
+body.page33 {
+  background: linear-gradient(to bottom, #fffafc, #ffe4e4);
+}
+
+/* 4.25🎂 - 樱紫+预告 */
+body.page425 {
+  background: linear-gradient(to bottom, #ffe4f2, #fbe5f5);
+}
+
+/* 待办🗒️ - 萌物粉绿调 */
+body.todo {
+  background: linear-gradient(to bottom, #fff7fb, #ffe4f2);
+}
+
+.nav {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(12px);
+  padding: 14px;
+  border-radius: 0 0 20px 20px;
+  box-shadow: 0 4px 14px rgba(255, 105, 180, 0.15);
+}
+
+.nav a {
+  margin: 10px;
+  color: #c2185b;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 8px 14px;
+  border-radius: 12px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.nav a:hover {
+  background: rgba(255, 182, 193, 0.3);
+  color: #fff;
+}
+
+.content {
+  text-align: center;
+  margin-top: 50px;
+}
+
+h1 {
+  color: #d63384;
+  font-size: 38px;
+  font-family: 'Caveat', cursive;
+  text-shadow: 2px 2px #ffc0cb;
+}
+
+.main-photo {
+  width: 48%;
+  max-width: 600px;
+  border-radius: 20px;
+  box-shadow: 0 0 24px rgba(255, 192, 203, 0.45);
+  margin-top: 24px;
+}
+
+
+.gallery {
+  padding: 30px 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 28px;
+}
+
+.photo-block {
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 20px;
+  padding: 10px;
+  box-shadow: 0 4px 15px rgba(255, 182, 193, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: inline-block;
+  max-width: 240px;
+  margin: 10px;
+}
+
+.photo-block img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 16px;
+  display: block;
+  margin: 0 auto;
+  transition: transform 0.3s ease;
+}
+
+.photo-block:hover img {
+  transform: scale(1.05);
+}
+
+
+.comment {
+  font-size: 15px;
+  font-style: italic;
+  color: #a0527d;
+  text-align: center;
+}
+
+#mute-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #fff0f5;
+  border: 2px solid #ffb6c1;
+  border-radius: 50%;
+  font-size: 26px;
+  padding: 12px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  box-shadow: 0 0 12px rgba(255, 182, 193, 0.4);
+}
+
+#mute-btn:hover {
+  background-color: #ffb6c1;
+  color: white;
+}
+
+/* TODO box 专属风格 */
+.todo-box {
+  background-color: #fff0f5;
+  margin: 40px auto;
+  padding: 24px 36px;
+  width: 85%;
+  border-radius: 20px;
+  font-family: 'Caveat', cursive;
+  font-size: 20px;
+  line-height: 1.8;
+  color: #b03060;
+  box-shadow: 0 0 20px rgba(255, 105, 180, 0.3);
+}
+
+.emoji-decor {
+  position: fixed;
+  top: 18%;
+  font-size: 28px;
+  line-height: 1.8;
+  opacity: 0.25;
+  z-index: 0;
+  pointer-events: none;
+  animation: floatY 6s ease-in-out infinite;
+  writing-mode: vertical-rl;
+  text-align: center;
+}
+
+.emoji-decor.left {
+  left: 12px;
+}
+
+.emoji-decor.right {
+  right: 12px;
+}
+
+/* 漂浮动画 */
+@keyframes floatY {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+

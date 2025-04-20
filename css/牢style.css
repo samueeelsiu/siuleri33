@@ -1,0 +1,132 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Quicksand:wght@400;600&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+  background: linear-gradient(to bottom right, #fff0f5, #ffe4e1);
+  overflow-x: hidden;
+}
+
+/* 页面主题色调通过 body class 控制 */
+body.home     { background: linear-gradient(to bottom, #fff0f5, #ffe4ec); }
+body.page337  { background: linear-gradient(to bottom, #fffafc, #ffe5ec); }
+body.daily    { background: linear-gradient(to bottom, #fffef9, #ffe4ec); }
+body.travel   { background: linear-gradient(to bottom, #fff0f7, #ffddee); }
+body.page33   { background: linear-gradient(to bottom, #fff0f5, #ffe4e4); }
+body.page425  { background: linear-gradient(to bottom, #fff0f5, #fce4ec); }
+body.todo     { background: linear-gradient(to bottom, #fff9fb, #ffe0ef); }
+
+.nav {
+  text-align: center;
+  background: rgba(255, 182, 193, 0.4);
+  backdrop-filter: blur(10px);
+  padding: 12px;
+  border-radius: 0 0 20px 20px;
+  box-shadow: 0 4px 12px rgba(255, 105, 180, 0.2);
+}
+
+.nav a {
+  margin: 10px;
+  color: #c2185b;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.nav a:hover {
+  background: rgba(255, 182, 193, 0.3);
+}
+
+.content {
+  text-align: center;
+  margin-top: 50px;
+}
+
+h1 {
+  color: #d63384;
+  font-size: 36px;
+  font-family: 'Caveat', cursive;
+  text-shadow: 1px 1px #ffc0cb;
+}
+
+.main-photo {
+  width: 70%;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(255, 192, 203, 0.5);
+  margin-top: 20px;
+}
+
+.gallery {
+  padding: 20px 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+}
+
+.photo-block {
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 20px;
+  padding: 12px;
+  width: 220px;
+  box-shadow: 0 4px 15px rgba(255, 182, 193, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.photo-block:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(255, 182, 193, 0.6);
+}
+
+.photo-block img {
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 0 10px rgba(220, 220, 220, 0.6);
+  margin-bottom: 10px;
+}
+
+.comment {
+  font-size: 14px;
+  font-style: italic;
+  color: #a0527d;
+  text-align: center;
+}
+
+#mute-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #fff0f5;
+  border: 2px solid #ffb6c1;
+  border-radius: 50%;
+  font-size: 24px;
+  padding: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#mute-btn:hover {
+  background-color: #ffb6c1;
+  color: white;
+}
+
+/* TODO box 复用设计 */
+.todo-box {
+  background-color: #fff0f5;
+  margin: 40px auto;
+  padding: 20px 30px;
+  width: 80%;
+  border-radius: 16px;
+  font-family: 'Caveat', cursive;
+  font-size: 18px;
+  line-height: 1.8;
+  color: #b03060;
+  box-shadow: 0 0 15px rgba(255, 105, 180, 0.3);
+}
