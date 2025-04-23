@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>主页💒</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    body {
+      margin: 0;
+      background-color: #fff0f5;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    .hero {
+      text-align: center;
+      padding: 80px 20px;
+    }
+    .hero img {
+      width: 60%;
+      max-width: 520px;
+      border-radius: 16px;
+      box-shadow: 0 10px 40px rgba(255,182,193,0.35);
+      margin-bottom: 40px;
+    }
+    .welcome-text {
+      font-size: 28px;
+      color: #d63384;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+    #overlay {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(circle at center, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 100%);
+      animation: lightOn 2s ease-out forwards;
+      z-index: 9999;
+    }
+    @keyframes lightOn {
+      0% {
+        background: radial-gradient(circle at center, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 100%);
+      }
+      100% {
+        background: radial-gradient(circle at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 100%);
+        opacity: 0;
+        visibility: hidden;
+      }
+    }
+    .typewriter {
+      display: inline-block;
+      overflow: hidden;
+      white-space: nowrap;
+      border-right: 3px solid #d63384;
+      animation: typing 3.5s steps(30, end), blink 0.75s step-end infinite;
+    }
+    @keyframes typing {
+      from { width: 0; }
+      to { width: 100%; }
+    }
+    @keyframes blink {
+      from, to { border-color: transparent }
+      50% { border-color: #d63384; }
+    }
+  </style>
+</head>
+<body>
+
+  <div id="overlay"></div>
+
+  <div class="nav">
+    <a href="index.html">主页💒</a>
+    <a href="337.html">337🥘</a>
+    <a href="rc.html">日常🐶</a>
+    <a href="travel.html">旅游🎠</a>
+    <a href="33.html">3.3🎂</a>
+    <a href="425.html">4.25🎂</a>
+    <a href="todo.html">待完成列表🗒️</a>
+  </div>
+
+  <div class="hero">
+    <img src="img/hunli.JPG" alt="合照">
+    <div class="welcome-text">
+      <span class="typewriter">雷猴啊，欢迎来到 33 和 339 的世界 💗</span>
+    </div>
+  </div>
+
+  <audio id="bg-music" src="music/zhuye.mp3" autoplay loop></audio>
+  <button id="mute-btn">🔇</button>
+  <script src="js/music.js"></script>
+  <script>
+    const fallImages = [
+      "img/DingDang.PNG", "img/Bingo.PNG", "img/Ximei.PNG",
+      "img/Damei.PNG", "img/Lucy.PNG", "img/Pipi.PNG"
+    ];
+  </script>
+  <script src="js/falling.js"></script>
+
+</body>
+</html>
